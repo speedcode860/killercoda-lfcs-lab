@@ -1,0 +1,16 @@
+{
+  "title": "LFCS - Kernel Parameters with sysctl",
+  "description": "Persistent and non-persistent kernel parameter changes, then a real-world hardening ticket",
+  "details": {
+    "intro": { "text": "intro.md", "background": "setup.sh", "foreground": "foreground.sh" },
+    "steps": [
+      { "title": "Explore kernel parameters", "text": "step1/text.md", "verify": "step1/verify.sh" },
+      { "title": "Non-persistent changes", "text": "step2/text.md", "verify": "step2/verify.sh" },
+      { "title": "Persistent change: /etc/sysctl.conf", "text": "step3/text.md", "verify": "step3/verify.sh" },
+      { "title": "Persistent change: /etc/sysctl.d/", "text": "step4/text.md", "verify": "step4/verify.sh" },
+      { "title": "Real-world ticket: security hardening", "text": "step5/text.md", "verify": "step5/verify.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}
